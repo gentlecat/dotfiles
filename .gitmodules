@@ -52,3 +52,6 @@
 [submodule "vim.symlink/bundle/vim-less"]
 	path = vim.symlink/bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
+[submodule "vim.symlink/bundle/latex-box"]
+	path = vim.symlink/bundle/latex-box
+	url = git@github.com:LaTeX-Box-Team/LaTeX-Box.git
