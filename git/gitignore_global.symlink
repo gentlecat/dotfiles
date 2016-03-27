@@ -1,0 +1,14 @@
+# IDE garbage
+.idea
+*.iml
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# OS garbage
+*~
+.DS_Store
+
+.vagrant
+.bundle
+
