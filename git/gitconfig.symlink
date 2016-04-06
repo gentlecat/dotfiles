@@ -1,6 +1,10 @@
 [user]
 	name = Roman Tsukanov
 	email = roman@tsukanov.me
+	signingkey = 7F3BA2AD
+
+[commit]
+    gpgsign = true
 
 [github]
 	user = gentlecat
@@ -161,3 +165,4 @@
 
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
+
