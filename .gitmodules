@@ -55,3 +55,6 @@
 [submodule "vim.symlink/bundle/latex-box"]
 	path = vim.symlink/bundle/latex-box
 	url = git@github.com:LaTeX-Box-Team/LaTeX-Box.git
+[submodule "vim.symlink/bundle/vim-elixir"]
+	path = vim.symlink/bundle/vim-elixir
+	url = https://github.com/elixir-lang/vim-elixir.git
