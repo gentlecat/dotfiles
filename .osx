@@ -2,7 +2,7 @@
 # ~/.osx
 
 # Stop iTunes from responding to the keyboard media keys
-launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
+#launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
 
 # Finder: show hidden files by default
 defaults write com.apple.Finder AppleShowAllFiles -bool true
