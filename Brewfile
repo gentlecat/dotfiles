@@ -20,6 +20,7 @@ brew 'unrar'
 brew 'vim'
 brew 'wget'
 brew 'youtube-dl'
+brew 'thefuck'
 
 cask '1password'
 cask 'adium'

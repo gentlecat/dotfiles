@@ -4,3 +4,5 @@ set PATH /usr/local/sbin $PATH
 set -x GOPATH ~/workspace/go
 set PATH $GOPATH/bin $PATH
 
+eval (thefuck --alias | tr '\n' ';')
+
