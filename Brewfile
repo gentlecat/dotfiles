@@ -29,3 +29,5 @@ cask 'seashore'
 cask 'steam'
 cask 'transmission'
 cask 'vlc'
+cask 'vagrant'
+
