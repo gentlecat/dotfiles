@@ -8,3 +8,10 @@ set PATH $GOPATH/bin $PATH
 
 eval (thefuck --alias | tr '\n' ';')
 
+function docker-bash
+	docker exec -it $argv /bin/bash
+end
+
+function docker-sh
+    docker exec -it $argv /bin/sh
+end
