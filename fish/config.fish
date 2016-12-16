@@ -8,7 +8,7 @@ eval (perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
 set PATH ~/Library/Android/sdk/platform-tools $PATH
 
 # Add directory with "subl" command to lunch Sublime Text
-set PATH /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/ $PATH
+set PATH /Applications/Sublime\ Text.app/Contents/SharedSupport/bin $PATH
 
 # Golang
 set -x GOPATH ~/workspace/go
