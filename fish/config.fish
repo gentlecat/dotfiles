@@ -21,6 +21,10 @@ eval (thefuck --alias | tr '\n' ';')
 # Helper functions #
 ####################
 
+function serve
+    python3 -m http.server --bind=localhost 8080
+end
+
 function docker-bash
 	docker exec -it $argv /bin/bash
 end
