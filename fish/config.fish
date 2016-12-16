@@ -40,3 +40,9 @@ function docker-clean
 	docker rmi -f (docker images -q)
 	docker ps -a | cut -c-12 | xargs docker rm
 end
+
+function cleanup
+	rm "/Users/roman/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.RecentDocuments.sfl"
+	rm "/Users/roman/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments.sfl"
+	rm -r "/Users/roman/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments"
+end
