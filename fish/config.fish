@@ -1,8 +1,5 @@
 set PATH /usr/local/sbin $PATH
 
-# Perl
-set -x PERL_MM_OPT "INSTALL_BASE=$HOME/perl5"
-eval (perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
 
 # Android tools
 set PATH ~/Library/Android/sdk/platform-tools $PATH
