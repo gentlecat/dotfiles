@@ -1,18 +1,17 @@
-set PATH /usr/local/sbin $PATH
-
-
-# Android tools
-set PATH ~/Library/Android/sdk/platform-tools $PATH
-
-# Add directory with "subl" command to lunch Sublime Text
-set PATH /Applications/Sublime\ Text.app/Contents/SharedSupport/bin $PATH
+# rbenv
+status --is-interactive; and source (rbenv init -|psub);
 
 # Golang
 set -x GOPATH ~/workspace/go
+set -x GODEV ~/workspace/golang
+set -x GOROOT_BOOTSTRAP (go env GOROOT)
 set PATH $GOPATH/bin $PATH
 
 # fuck
 eval (thefuck --alias | tr '\n' ';')
+
+alias git=hub
+alias g=git
 
 ####################
 # Helper functions #
