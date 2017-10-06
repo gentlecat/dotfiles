@@ -3,24 +3,25 @@
 
 tap 'homebrew/bundle'
 tap 'homebrew/services'
+tap 'caskroom/cask'
 tap 'caskroom/versions'
 
 # The shell
 brew 'fish'
 
 # Programming languages and environments
+brew 'elixir'
 brew 'go'
-brew 'rbenv'
-brew 'ruby-build'
+brew 'node'
 #brew 'python'
 brew 'python3'
-brew 'node'
+brew 'rbenv'
 
 # Essentials
 brew 'coreutils'
 brew 'moreutils'
 brew 'htop'
-brew 'vim', args: ['with-override-system-vi', 'with-python3', 
+brew 'vim', args: ['with-override-system-vi', 'with-python3',
 'without-perl', 'with-custom-ruby']
 
 # Dev tools
@@ -68,7 +69,6 @@ cask 'little-snitch'
 cask 'mendeley-desktop'
 cask 'shiori' # Pinboard client
 cask 'softu2f'
-cask 'spectacle'
 cask 'spotify'
 cask 'the-unarchiver'
 cask 'transmission'
@@ -85,7 +85,7 @@ cask 'rubymine'
 cask 'sourcetree'
 cask 'sublime-text'
 #cask 'virtualbox'
-cask 'wireshark'
+#cask 'wireshark'
 
 # Browsers
 cask 'chromium'
