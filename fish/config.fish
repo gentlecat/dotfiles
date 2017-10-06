@@ -10,13 +10,11 @@ set PATH $GOPATH/bin $PATH
 # fuck
 eval (thefuck --alias | tr '\n' ';')
 
-alias git=hub
-alias g=git
-
 ####################
 # Helper functions #
 ####################
 
+# Create an HTTP server serving current directory on port 8080
 function serve
     python3 -m http.server --bind=localhost 8080
 end
@@ -41,4 +39,51 @@ function cleanup
 	rm "/Users/roman/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.RecentDocuments.sfl"
 	rm "/Users/roman/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments.sfl"
 	rm -r "/Users/roman/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments"
+end
+
+###########
+# Aliases #
+###########
+
+alias l="ls -CF"
+
+alias git=hub
+alias g=git
+
+# `s` with no arguments opens the current directory in Sublime Text, otherwise
+# opens the given location
+function s
+	if [ (count $argv) -eq 0 ]
+		subl .
+	else
+		subl "$argv"
+	end
+end
+
+# `v` with no arguments opens the current directory in Vim, otherwise opens the
+# given location
+function v
+	if [ (count $argv) -eq 0 ]
+		vim .
+	else
+		vim "$argv"
+	end
+end
+
+# `o` with no arguments opens the current directory, otherwise opens the given
+# location
+function o
+	if [ (count $argv) -eq 0 ]
+		open .
+	else
+		open "$argv"
+	end
+end
+
+# `tre` is a shorthand for `tree` with hidden files and color enabled, ignoring
+# the `.git` directory, listing directories first. The output gets piped into
+# `less` with options to preserve color and line numbers, unless the output is
+# small enough for one screen.
+function tre
+	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$argv" | less -FRNX
 end
