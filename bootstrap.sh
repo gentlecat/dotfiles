@@ -119,11 +119,32 @@ link_fish_config () {
   link_file "$src" "$dst"
 }
 
+# See https://packagecontrol.io/docs/syncing
+configure_sublime_text () {
+  local overwrite_all=false backup_all=false skip_all=false
+
+  subl_data_root="$HOME/Library/Application Support/Sublime Text 3"
+  mkdir -p "$subl_data_root"
+
+  # Installing Package Control
+  packages_root="$subl_data_root/Installed Packages"
+  mkdir -p "$packages_root"
+  curl -s -o "$packages_root/Package Control.sublime-package" \
+       "https://packagecontrol.io/Package Control.sublime-package"
+
+  # Configuring
+  src="$DOTFILES_ROOT/sublime_text"
+  dst="$subl_data_root/Packages"
+  mkdir -p "$dst"
+  link_file "$src" "$dst/User"
+}
+
 
 echo ''
 
 install_dotfiles
 link_fish_config
+configure_sublime_text
 
 echo ''
 echo '  All ready!'

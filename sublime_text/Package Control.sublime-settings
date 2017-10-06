@@ -1,0 +1,25 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"ayu",
+		"Babel",
+		"Dockerfile Syntax Highlighting",
+		"ElixirSublime",
+		"fish-shell",
+		"GitSavvy",
+		"GoSublime",
+		"JSON Reindent",
+		"LaTeXTools",
+		"Markdown Preview",
+		"MarkdownHighlighting",
+		"nginx",
+		"Package Control",
+		"SCSS",
+		"SideBarEnhancements"
+	]
+}

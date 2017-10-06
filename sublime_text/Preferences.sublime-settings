@@ -1,0 +1,53 @@
+{
+	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
+	"theme": "Adaptive.sublime-theme",
+	"font_size": 13,
+	"line_padding_bottom": 1,
+	"highlight_modified_tabs": true,
+	"ui_font_default": true,
+	"ui_native_titlebar": true,
+	"word_wrap": true,
+
+	"default_encoding": "UTF-8",
+	"show_encoding": true,
+	"default_line_ending": "unix",
+	"show_line_endings": true,
+
+	"file_exclude_patterns":
+	[
+		".DS_Store",
+		"Desktop.ini",
+		"*.pyc",
+		"._*",
+		"Thumbs.db",
+		".Spotlight-V100",
+		".Trashes"
+	],
+	"folder_exclude_patterns":
+	[
+		".git",
+		"node_modules"
+	],
+
+	"match_brackets": true,
+	"match_brackets_angle": true,
+	"rulers":
+	[
+		80
+	],
+	"detect_indentation": false,
+	"tab_size": 2,
+	"translate_tabs_to_spaces": false,
+	"trim_trailing_white_space_on_save": true,
+	"ensure_newline_at_eof_on_save": true,
+
+	"hot_exit": false,
+	"remember_open_files": false,
+	"save_on_focus_lost": true,
+
+	"ignored_packages":
+	[
+		"Markdown",
+		"Vintage"
+	]
+}
