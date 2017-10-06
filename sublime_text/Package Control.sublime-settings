@@ -1,10 +1,5 @@
 {
-	"bootstrapped": true,
-	"in_process_packages":
-	[
-	],
-	"installed_packages":
-	[
+	"installed_packages": [
 		"A File Icon",
 		"ayu",
 		"Babel",
@@ -20,6 +15,11 @@
 		"nginx",
 		"Package Control",
 		"SCSS",
-		"SideBarEnhancements"
-	]
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-csslint",
+		"SublimeLinter-jshint"
+	],
+	"bootstrapped": true,
+	"in_process_packages": []
 }
