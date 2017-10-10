@@ -31,6 +31,7 @@ brew 'hub' # GitHub tools (supposed to be used as an alias for `git`)
 brew 'grep'
 brew 'ack' # A better grep
 brew 'yarn'
+brew 'postgresql', args: ['with-python3', 'without-perl']
 brew 'sqlite'
 
 # Utilities
@@ -42,6 +43,7 @@ brew 'screen'
 brew 'the_silver_searcher'
 brew 'thefuck'
 brew 'tor'
+brew 'jrnl'
 brew 'tree'
 brew 'youtube-dl' # Video downloader
 brew 'zopfli'
@@ -74,14 +76,16 @@ cask 'the-unarchiver'
 cask 'transmission'
 cask 'tunnelblick'
 cask 'vlc'
-cask 'whatsapp'
+
+#cask 'whatsapp'
+#cask 'telegram'
 
 # Development tools
 cask 'dash'
 cask 'intellij-idea'
-#cask 'postage'
-#cask 'postman'
-cask 'rubymine'
+#cask 'rubymine'
+cask 'pgadmin4'
+#cask 'insomnia'
 cask 'sourcetree'
 cask 'sublime-text'
 #cask 'virtualbox'
