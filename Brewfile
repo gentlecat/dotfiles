@@ -38,12 +38,13 @@ brew 'sqlite'
 brew 'exa' # `ls` replacement
 brew 'ffmpeg'
 brew 'httpie'
+brew 'jrnl'
+brew 'mosh'
 brew 'pv' # Pipe Viewer
 brew 'screen'
 brew 'the_silver_searcher'
 brew 'thefuck'
 brew 'tor'
-brew 'jrnl'
 brew 'tree'
 brew 'youtube-dl' # Video downloader
 brew 'zopfli'
@@ -65,9 +66,11 @@ cask 'flux'
 #cask 'gas-mask'
 cask 'gpgtools'
 cask 'handbrake' # Video converter
+cask 'imageoptim'
 cask 'iterm2'
 cask 'keybase'
 cask 'little-snitch'
+cask 'mactex'
 cask 'mendeley-desktop'
 cask 'shiori' # Pinboard client
 cask 'softu2f'
@@ -77,7 +80,7 @@ cask 'transmission'
 cask 'tunnelblick'
 cask 'vlc'
 
-#cask 'whatsapp'
+cask 'whatsapp'
 #cask 'telegram'
 
 # Development tools
