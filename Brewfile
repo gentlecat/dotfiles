@@ -27,6 +27,7 @@ brew 'vim', args: ['with-override-system-vi', 'with-python3',
 # Dev tools
 brew 'git'
 brew 'git-extras'
+brew 'git-secrets'
 brew 'hub' # GitHub tools (supposed to be used as an alias for `git`)
 brew 'grep'
 brew 'ack' # A better grep
@@ -86,6 +87,7 @@ cask 'whatsapp'
 # Development tools
 cask 'dash'
 cask 'intellij-idea'
+cask 'android-studio'
 #cask 'rubymine'
 cask 'pgadmin4'
 #cask 'insomnia'
