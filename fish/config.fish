@@ -10,6 +10,8 @@ set PATH $GOPATH/bin $PATH
 # fuck
 eval (thefuck --alias | tr '\n' ';')
 
+set -x EDITOR subl
+
 ####################
 # Helper functions #
 ####################
