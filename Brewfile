@@ -5,6 +5,7 @@ tap 'homebrew/bundle'
 tap 'homebrew/services'
 tap 'caskroom/cask'
 tap 'caskroom/versions'
+tap 'buo/cask-upgrade' # https://github.com/buo/homebrew-cask-upgrade
 
 # The shell
 brew 'fish'
