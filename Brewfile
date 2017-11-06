@@ -56,7 +56,7 @@ brew 'zopfli'
 #########
 
 cask '1password'
-#cask 'adobe-acrobat-reader'
+cask 'adobe-acrobat-reader'
 cask 'calibre' # Book library management
 cask 'cleanmymac'
 #cask 'disk-inventory-x'
@@ -76,19 +76,22 @@ cask 'mendeley-desktop'
 cask 'shiori' # Pinboard client
 cask 'softu2f'
 cask 'spotify'
+#cask 'parallels'
 cask 'the-unarchiver'
 cask 'transmission'
 cask 'tunnelblick'
+#cask 'remote-play' # PS4 Remote Play
 cask 'vlc'
 
-cask 'whatsapp'
+#cask 'skype'
+#cask 'whatsapp'
 #cask 'telegram'
 
 # Development tools
 cask 'dash'
 cask 'intellij-idea'
 cask 'android-studio'
-#cask 'rubymine'
+cask 'rubymine'
 cask 'pgadmin4'
 #cask 'insomnia'
 cask 'sourcetree'
