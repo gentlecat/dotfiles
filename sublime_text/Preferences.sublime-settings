@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Celeste.sublime-color-scheme",
 	"theme": "Adaptive.sublime-theme",
 	"font_size": 13,
 	"line_padding_bottom": 1,
@@ -7,7 +7,7 @@
 	"ui_font_default": true,
 	"ui_native_titlebar": true,
 	"word_wrap": true,
-
+	
 	"default_encoding": "UTF-8",
 	"show_encoding": true,
 	"default_line_ending": "unix",
@@ -25,7 +25,6 @@
 	],
 	"folder_exclude_patterns":
 	[
-		".git",
 		"node_modules"
 	],
 
