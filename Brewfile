@@ -3,6 +3,7 @@
 
 tap 'homebrew/bundle'
 tap 'homebrew/services'
+tap 'gentlecat/personal'
 
 # The shell
 brew 'fish'
@@ -17,9 +18,7 @@ brew 'rbenv'
 # Essentials
 brew 'coreutils'
 brew 'moreutils'
-brew 'htop'
-brew 'vim', args: ['with-override-system-vi', 'with-python3',
-'without-perl', 'with-custom-ruby']
+brew 'vim', args: ['with-override-system-vi', 'with-python3', 'without-perl', 'with-custom-ruby']
 
 # Dev tools
 brew 'git'
@@ -48,20 +47,34 @@ brew 'thefuck'
 brew 'tldr'
 brew 'tor'
 brew 'tree'
+brew 'libgxps'
 brew 'youtube-dl' # Video downloader
 brew 'zopfli'
+
+brew 'sshfs'
+
+brew 'gentlecat/personal/clippy', args: ['HEAD']
 
 
 #########
 # Casks #
 #########
 
-tap 'caskroom/cask'
 tap 'homebrew/cask-drivers'
-tap 'caskroom/versions'
+tap 'homebrew/cask-versions'
 tap 'buo/cask-upgrade' # https://github.com/buo/homebrew-cask-upgrade
 
 cask '1password'
+cask 'alfred'
+#cask 'adobe-acrobat-reader'
+cask 'calibre' # Book library management
+#cask 'disk-inventory-x'
+cask 'docker'
+cask 'dropbox'
+#cask 'flux'
+cask 'gas-mask'
+#cask 'handbrake' # Video converter
+#cask 'imageoptim'
 cask 'calibre' # Book library management
 cask 'docker'
 cask 'dropbox'
@@ -85,20 +98,37 @@ cask 'tunnelblick'
 cask 'plex-media-player'
 cask 'sony-ps4-remote-play' # PS4 Remote Play
 cask 'vlc'
+
+# Comms
 cask 'signal'
+cask 'discord'
+cask 'amazon-chime'
 
 # Development tools
+cask 'jetbrains-toolbox'
 cask 'dash'
-cask 'intellij-idea'
+cask 'db-browser-for-sqlite'
 cask 'android-studio'
-#cask 'pgadmin4'
 #cask 'insomnia'
 cask 'fork'
 cask 'sublime-text'
-#cask 'virtualbox'
+cask 'virtualbox'
 #cask 'wireshark'
 
 # Browsers
-cask 'firefox-developer-edition'
+#cask 'chromium'
 cask 'google-chrome'
+#cask 'google-chrome-canary'
 cask 'torbrowser'
+cask 'firefox-developer-edition'
+
+cask 'osxfuse'
+
+
+########
+# Misc #
+########
+
+# Fonts
+tap 'caskroom/fonts'
+cask 'font-iosevka'

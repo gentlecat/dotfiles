@@ -145,11 +145,6 @@ configure_sublime_text () {
 
 echo ''
 
-echo 'Setting up Homebrew packages...'
-brew bundle 2>&1 >/dev/null
-echo 'Done!'
-echo ''
-
 install_dotfiles
 link_fish_config
 configure_sublime_text

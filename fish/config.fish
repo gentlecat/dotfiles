@@ -53,8 +53,12 @@ alias l="ls -CF"
 alias git=hub
 alias g=git
 
+alias ws="cd ~/workspace/"
+alias go-ws="cd ~/workspace/go/src/"
 
 alias brew-sync="cd ~/workspace/dotfiles; brew update; brew upgrade; brew bundle; brew cleanup; brew bundle cleanup -v --force"
+
+alias tor-mnt="sudo sshfs -o allow_other,defer_permissions,IdentityFile=/Users/roman/.ssh/digitalocean roman@138.197.142.176:/ /mnt/droplet"
 
 # `s` with no arguments opens the current directory in Sublime Text, otherwise
 # opens the given location

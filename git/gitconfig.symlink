@@ -76,6 +76,14 @@
     # Kind of like amend, but not for last commit
     fixup = "!f() { TARGET=$(git rev-parse "$1"); git commit --fixup=$TARGET ${@:2} && EDITOR=true git rebase -i --autostash --autosquash $TARGET^; }; f"
 
+    # git-codereview
+	change = codereview change
+	gofmt = codereview gofmt
+	mail = codereview mail
+	pending = codereview pending
+	submit = codereview submit
+	sync = codereview sync
+
 [apply]
 
 	# Detect whitespace errors when applying a patch
