@@ -11,6 +11,7 @@ set PATH $GOPATH/bin $PATH
 eval (thefuck --alias | tr '\n' ';')
 
 set -x EDITOR subl
+set -x LANG "en_US.UTF-8"
 
 ####################
 # Helper functions #
