@@ -53,6 +53,9 @@ alias l="ls -CF"
 alias git=hub
 alias g=git
 
+
+alias brew-sync="cd ~/workspace/dotfiles; brew update; brew upgrade; brew bundle; brew cleanup; brew bundle cleanup -v --force"
+
 # `s` with no arguments opens the current directory in Sublime Text, otherwise
 # opens the given location
 function s
