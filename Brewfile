@@ -3,9 +3,6 @@
 
 tap 'homebrew/bundle'
 tap 'homebrew/services'
-tap 'caskroom/cask'
-tap 'caskroom/versions'
-tap 'buo/cask-upgrade' # https://github.com/buo/homebrew-cask-upgrade
 
 # The shell
 brew 'fish'
@@ -14,8 +11,7 @@ brew 'fish'
 brew 'elixir'
 brew 'go'
 brew 'node'
-#brew 'python'
-brew 'python3'
+brew 'python'
 brew 'rbenv'
 
 # Essentials
@@ -30,6 +26,7 @@ brew 'git'
 brew 'git-extras'
 brew 'git-secrets'
 brew 'hub' # GitHub tools (supposed to be used as an alias for `git`)
+brew 'gpg'
 brew 'grep'
 brew 'ack' # A better grep
 brew 'yarn'
@@ -56,17 +53,17 @@ brew 'zopfli'
 # Casks #
 #########
 
+tap 'caskroom/cask'
+tap 'homebrew/cask-drivers'
+tap 'caskroom/versions'
+tap 'buo/cask-upgrade' # https://github.com/buo/homebrew-cask-upgrade
+
 cask '1password'
-cask 'adobe-acrobat-reader'
 cask 'calibre' # Book library management
-cask 'cleanmymac'
-#cask 'disk-inventory-x'
-cask 'dnscrypt'
-cask 'docker'
+#cask 'docker'
 cask 'dropbox'
+cask 'trainerroad'
 cask 'flux'
-#cask 'gas-mask'
-cask 'gpgtools'
 cask 'handbrake' # Video converter
 cask 'imageoptim'
 cask 'iterm2'
@@ -74,10 +71,8 @@ cask 'keybase'
 cask 'little-snitch'
 cask 'mactex'
 cask 'mendeley-desktop'
-cask 'shiori' # Pinboard client
 cask 'softu2f'
 cask 'spotify'
-#cask 'parallels'
 cask 'the-unarchiver'
 cask 'transmission'
 cask 'tunnelblick'
@@ -92,8 +87,7 @@ cask 'vlc'
 cask 'dash'
 cask 'intellij-idea'
 cask 'android-studio'
-cask 'rubymine'
-cask 'pgadmin4'
+#cask 'pgadmin4'
 #cask 'insomnia'
 cask 'sourcetree'
 cask 'sublime-text'
@@ -101,10 +95,6 @@ cask 'sublime-text'
 #cask 'wireshark'
 
 # Browsers
-cask 'chromium'
+cask 'firefox-developer-edition'
 cask 'google-chrome'
 cask 'torbrowser'
-cask 'firefox'
-cask 'caskroom/versions/webkit-nightly'
-cask 'caskroom/versions/google-chrome-canary'
-cask 'caskroom/versions/firefoxnightly'
