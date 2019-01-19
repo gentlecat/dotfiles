@@ -1,8 +1,5 @@
 {
 	"bootstrapped": true,
-	"in_process_packages":
-	[
-	],
 	"installed_packages":
 	[
 		"A File Icon",
@@ -13,10 +10,8 @@
 		"fish",
 		"GitSavvy",
 		"GoRename",
-		"GoSublime",
 		"JSON Reindent",
 		"LaTeXTools",
-		"MarkdownHighlighting",
 		"MarkdownPreview",
 		"nginx",
 		"Package Control",
