@@ -132,3 +132,4 @@ cask 'osxfuse'
 # Fonts
 tap 'caskroom/fonts'
 cask 'font-iosevka'
+cask 'font-go'
