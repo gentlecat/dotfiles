@@ -119,11 +119,14 @@ link_fish_config () {
   link_file "$src" "$dst"
 }
 
-# See https://packagecontrol.io/docs/syncing
+# See https://packagecontrol.io/docs/syncing.
+# Keep in mind that this will completely overwrite the existing configuration.
 configure_sublime_text () {
   local overwrite_all=false backup_all=false skip_all=false
 
   subl_data_root="$HOME/Library/Application Support/Sublime Text 3"
+  rm -rf subl_data_root
+  success "removed $subl_data_root (if it existed)"
   mkdir -p "$subl_data_root"
 
   # Installing Package Control
