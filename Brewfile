@@ -71,7 +71,7 @@ cask 'calibre' # Book library management
 #cask 'disk-inventory-x'
 cask 'docker'
 cask 'dropbox'
-#cask 'flux'
+cask 'flux'
 cask 'gas-mask'
 #cask 'handbrake' # Video converter
 #cask 'imageoptim'
@@ -86,7 +86,6 @@ cask 'handbrake' # Video converter
 cask 'imageoptim'
 cask 'iterm2'
 #cask 'keybase'
-cask 'adobe-acrobat-reader'
 cask 'little-snitch'
 cask 'mactex'
 cask 'mendeley-desktop'
@@ -132,4 +131,4 @@ cask 'osxfuse'
 # Fonts
 tap 'caskroom/fonts'
 cask 'font-iosevka'
-cask 'font-go'
+cask 'font-go-mono'
