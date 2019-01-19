@@ -1,5 +1,10 @@
 {
-	"installed_packages": [
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
 		"A File Icon",
 		"ayu",
 		"Babel",
@@ -7,11 +12,12 @@
 		"Elixir",
 		"fish",
 		"GitSavvy",
+		"GoRename",
 		"GoSublime",
 		"JSON Reindent",
 		"LaTeXTools",
-		"Markdown Preview",
 		"MarkdownHighlighting",
+		"MarkdownPreview",
 		"nginx",
 		"Package Control",
 		"SCSS",
@@ -19,7 +25,5 @@
 		"SublimeLinter",
 		"SublimeLinter-csslint",
 		"SublimeLinter-jshint"
-	],
-	"bootstrapped": true,
-	"in_process_packages": []
+	]
 }

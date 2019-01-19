@@ -1,18 +1,9 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Celeste.sublime-color-scheme",
-	"theme": "Adaptive.sublime-theme",
-	"font_size": 13,
-	"line_padding_bottom": 1,
-	"highlight_modified_tabs": true,
-	"ui_font_default": true,
-	"ui_native_titlebar": true,
-	"word_wrap": true,
-	
+	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
 	"default_encoding": "UTF-8",
-	"show_encoding": true,
 	"default_line_ending": "unix",
-	"show_line_endings": true,
-
+	"detect_indentation": true,
+	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
 		".DS_Store",
@@ -27,26 +18,31 @@
 	[
 		"node_modules"
 	],
-
-	"match_brackets": true,
-	"match_brackets_angle": true,
-	"rulers":
-	[
-		80
-	],
-	"detect_indentation": false,
-	"tab_size": 2,
-	"translate_tabs_to_spaces": false,
-	"trim_trailing_white_space_on_save": true,
-	"ensure_newline_at_eof_on_save": true,
-
+	"font_size": 14,
+	"highlight_modified_tabs": true,
 	"hot_exit": false,
-	"remember_open_files": false,
-	"save_on_focus_lost": true,
-
 	"ignored_packages":
 	[
 		"Markdown",
 		"Vintage"
-	]
+	],
+	"line_padding_bottom": 1,
+	"match_brackets": true,
+	"match_brackets_angle": true,
+	"remember_open_files": false,
+	"rulers":
+	[
+		80,
+		120
+	],
+	"save_on_focus_lost": true,
+	"show_encoding": true,
+	"show_line_endings": true,
+	"tab_size": 2,
+	"theme": "Adaptive.sublime-theme",
+	"translate_tabs_to_spaces": false,
+	"trim_trailing_white_space_on_save": true,
+	"ui_font_default": true,
+	"ui_native_titlebar": true,
+	"word_wrap": true
 }
