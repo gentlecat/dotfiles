@@ -59,6 +59,13 @@ defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 
 ###############################################################################
+# Privacy                                                                     #
+###############################################################################
+
+# Disable crash reporter
+defaults write com.apple.CrashReporter DialogType none
+
+###############################################################################
 # Finder                                                                      #
 ###############################################################################
 
@@ -214,12 +221,6 @@ defaults write com.apple.mail DraftsViewerAttributes -dict-add "SortOrder" -stri
 
 # Disable inline attachments (just show the icons)
 defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
-
-###############################################################################
-# GPGMail 2                                                                   #
-###############################################################################
-# Disable signing emails by default
-defaults write ~/Library/Preferences/org.gpgtools.gpgmail SignNewEmailsByDefault -bool false
 
 ###############################################################################
 # Mac App Store                                                               #
