@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-DOTFILES_ROOT=$(pwd -P)
+DOTFILES_ROOT="$( cd "$(dirname "$0")" ; pwd -P )"
 
 set -e
 
@@ -138,8 +138,7 @@ configure_sublime_text () {
   # Configuring
   src="$DOTFILES_ROOT/sublime_text"
   dst="$subl_data_root/Packages"
-  mkdir -p "$dst"
-  link_file "$src" "$dst/User"
+  link_file "$src" "$dst"
 }
 
 

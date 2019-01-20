@@ -58,3 +58,6 @@
 [submodule "vim.symlink/bundle/vim-elixir"]
 	path = vim.symlink/bundle/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
+[submodule "sublime_text/packages/GoSublime"]
+	path = sublime_text/packages/GoSublime
+	url = https://margo.sh/GoSublime
