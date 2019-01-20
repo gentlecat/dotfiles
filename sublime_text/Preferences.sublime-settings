@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
+	"color_scheme": "Packages/ayu/ayu-mirage.tmTheme",
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
 	"detect_indentation": true,
@@ -18,7 +18,8 @@
 	[
 		"node_modules"
 	],
-	"font_size": 14,
+	"font_face": "Go Mono",
+	"font_size": 15,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
 	"ignored_packages":
