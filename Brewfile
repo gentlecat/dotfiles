@@ -14,6 +14,7 @@ brew 'go'
 brew 'node'
 brew 'python'
 brew 'rbenv'
+brew 'typescript'
 
 # Essentials
 brew 'coreutils'
@@ -21,23 +22,24 @@ brew 'moreutils'
 brew 'vim', args: ['with-override-system-vi', 'with-python3', 'without-perl', 'with-custom-ruby']
 
 # Dev tools
+#brew 'postgresql', args: ['with-python3', 'without-perl']
+brew 'ack' # A better grep
+brew 'docker-compose'
 brew 'git'
 brew 'git-extras'
 brew 'git-secrets'
-brew 'hub' # GitHub tools (supposed to be used as an alias for `git`)
 brew 'gpg'
 brew 'grep'
-brew 'ack' # A better grep
-#brew 'yarn'
-#brew 'postgresql', args: ['with-python3', 'without-perl']
+brew 'hub' # GitHub tools (supposed to be used as an alias for `git`)
 brew 'sqlite'
-brew 'docker-compose'
+brew 'yarn'
 
 # Utilities
 brew 'exa' # `ls` replacement
 brew 'ffmpeg'
 brew 'httpie'
 brew 'jrnl'
+brew 'libgxps'
 brew 'libgxps' # Includes XPS to PDF converter
 brew 'mosh'
 brew 'pv' # Pipe Viewer
@@ -47,7 +49,6 @@ brew 'thefuck'
 brew 'tldr'
 brew 'tor'
 brew 'tree'
-brew 'libgxps'
 brew 'youtube-dl' # Video downloader
 brew 'zopfli'
 
@@ -64,38 +65,31 @@ tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-versions'
 tap 'buo/cask-upgrade' # https://github.com/buo/homebrew-cask-upgrade
 
+#cask 'disk-inventory-x'
+#cask 'handbrake' # Video converter
+#cask 'keybase'
 cask '1password'
 cask 'alfred'
-#cask 'adobe-acrobat-reader'
-cask 'calibre' # Book library management
-#cask 'disk-inventory-x'
-cask 'docker'
-cask 'dropbox'
-cask 'flux'
-cask 'gas-mask'
-#cask 'handbrake' # Video converter
-#cask 'imageoptim'
 cask 'calibre' # Book library management
 cask 'docker'
 cask 'dropbox'
-cask 'trainerroad'
-cask 'gas-mask'
-cask 'notion'
+cask 'fantastical'
 cask 'flux'
-cask 'handbrake' # Video converter
+cask 'gas-mask'
 cask 'imageoptim'
 cask 'iterm2'
-#cask 'keybase'
 cask 'little-snitch'
 cask 'mactex'
 cask 'mendeley-desktop'
+cask 'notion'
+cask 'plex-media-player'
 cask 'softu2f'
+cask 'sony-ps4-remote-play' # PS4 Remote Play
 cask 'spotify'
 cask 'the-unarchiver'
+cask 'trainerroad'
 cask 'transmission'
 cask 'tunnelblick'
-cask 'plex-media-player'
-cask 'sony-ps4-remote-play' # PS4 Remote Play
 cask 'vlc'
 
 # Comms
@@ -104,15 +98,16 @@ cask 'discord'
 cask 'amazon-chime'
 
 # Development tools
-cask 'jetbrains-toolbox'
+#cask 'insomnia'
+#cask 'wireshark'
+cask 'android-platform-tools'
+cask 'android-studio'
 cask 'dash'
 cask 'db-browser-for-sqlite'
-cask 'android-studio'
-#cask 'insomnia'
 cask 'fork'
+cask 'jetbrains-toolbox'
 cask 'sublime-text'
 cask 'virtualbox'
-#cask 'wireshark'
 
 # Browsers
 #cask 'chromium'
