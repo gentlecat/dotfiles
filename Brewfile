@@ -41,7 +41,7 @@ brew 'httpie'
 brew 'jrnl'
 brew 'libgxps'
 brew 'libgxps' # Includes XPS to PDF converter
-brew 'mosh'
+brew 'mosh', args: ['HEAD']
 brew 'pv' # Pipe Viewer
 brew 'screen'
 brew 'the_silver_searcher'
