@@ -69,6 +69,7 @@ tap 'buo/cask-upgrade' # https://github.com/buo/homebrew-cask-upgrade
 #cask 'handbrake' # Video converter
 #cask 'keybase'
 cask '1password'
+cask 'aerial'
 cask 'alfred'
 cask 'calibre' # Book library management
 cask 'docker'
@@ -84,6 +85,7 @@ cask 'mendeley-desktop'
 cask 'notion'
 cask 'plex-media-player'
 cask 'softu2f'
+cask 'suspicious-package'
 cask 'sony-ps4-remote-play' # PS4 Remote Play
 cask 'spotify'
 cask 'the-unarchiver'
