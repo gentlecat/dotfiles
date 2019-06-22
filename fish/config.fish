@@ -1,3 +1,5 @@
+set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
+
 # rbenv
 status --is-interactive; and source (rbenv init -|psub);
 
@@ -52,6 +54,7 @@ alias l="ls -CF"
 
 alias git=hub
 alias g=git
+alias c=code
 
 alias ws="cd ~/workspace/"
 alias go-ws="cd ~/workspace/go/src/"
