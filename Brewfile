@@ -25,6 +25,7 @@ brew 'vim', args: ['with-override-system-vi', 'with-python3', 'without-perl', 'w
 #brew 'postgresql', args: ['with-python3', 'without-perl']
 brew 'ack' # A better grep
 brew 'docker-compose'
+brew 'gcc'
 brew 'git'
 brew 'git-extras'
 brew 'git-secrets'
@@ -74,7 +75,6 @@ cask 'alfred'
 cask 'calibre' # Book library management
 cask 'docker'
 cask 'dropbox'
-cask 'fantastical'
 cask 'flux'
 cask 'gas-mask'
 cask 'imageoptim'
@@ -89,7 +89,7 @@ cask 'suspicious-package'
 cask 'sony-ps4-remote-play' # PS4 Remote Play
 cask 'spotify'
 cask 'the-unarchiver'
-cask 'trainerroad'
+#cask 'trainerroad'
 cask 'transmission'
 cask 'tunnelblick'
 cask 'vlc'
