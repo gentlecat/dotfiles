@@ -53,8 +53,6 @@ brew 'tree'
 brew 'youtube-dl' # Video downloader
 brew 'zopfli'
 
-brew 'sshfs'
-
 brew 'gentlecat/personal/clippy', args: ['HEAD']
 
 
@@ -71,16 +69,19 @@ tap 'buo/cask-upgrade' # https://github.com/buo/homebrew-cask-upgrade
 #cask 'keybase'
 cask '1password'
 cask 'aerial'
+cask 'appcleaner'
 cask 'alfred'
 cask 'calibre' # Book library management
 cask 'docker'
 cask 'dropbox'
 cask 'flux'
 cask 'gas-mask'
+cask 'garmin-express'
 cask 'imageoptim'
 cask 'iterm2'
 cask 'little-snitch'
-cask 'mactex'
+cask 'mactex-no-gui'
+cask 'macs-fan-control'
 cask 'mendeley-desktop'
 cask 'notion'
 cask 'plex-media-player'
@@ -96,7 +97,7 @@ cask 'vlc'
 
 # Comms
 cask 'signal'
-cask 'discord'
+#cask 'discord'
 cask 'amazon-chime'
 
 # Development tools
@@ -118,7 +119,7 @@ cask 'google-chrome'
 cask 'torbrowser'
 cask 'firefox-developer-edition'
 
-cask 'osxfuse'
+#cask 'osxfuse'
 
 
 ########
