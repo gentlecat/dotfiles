@@ -114,8 +114,8 @@ install_dotfiles () {
 link_fish_config () {
   local overwrite_all=false backup_all=false skip_all=false
 
-  src="$DOTFILES_ROOT/fish/config.fish"
-  dst="$HOME/.config/fish/config.fish"
+  src="$DOTFILES_ROOT/fish"
+  dst="$HOME/.config/fish"
   link_file "$src" "$dst"
 }
 
