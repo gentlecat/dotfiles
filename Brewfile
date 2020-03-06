@@ -54,6 +54,7 @@ brew 'youtube-dl' # Video downloader
 brew 'zopfli'
 
 brew 'gentlecat/personal/clippy', args: ['HEAD']
+brew 'gentlecat/personal/publisher', args: ['HEAD']
 
 
 #########
@@ -88,8 +89,9 @@ cask 'softu2f'
 cask 'suspicious-package'
 cask 'sony-ps4-remote-play' # PS4 Remote Play
 cask 'spotify'
+cask 'sonos'
 cask 'the-unarchiver'
-cask 'zwift'
+#cask 'zwift'
 #cask 'trainerroad'
 cask 'transmission'
 cask 'tunnelbear'
@@ -99,6 +101,7 @@ cask 'vlc'
 # Comms
 cask 'signal'
 cask 'telegram'
+cask 'whatsapp'
 #cask 'discord'
 cask 'amazon-chime'
 
@@ -113,7 +116,7 @@ cask 'db-browser-for-sqlite'
 cask 'fork'
 cask 'jetbrains-toolbox'
 cask 'sublime-text'
-cask 'virtualbox'
+#cask 'virtualbox'
 
 # Browsers
 #cask 'chromium'
