@@ -6,6 +6,9 @@ if not functions -q fisher
     fish -c fisher
 end
 
+# Starship shell prompt
+starship init fish | source
+
 # rbenv
 status --is-interactive; and source (rbenv init -|psub);
 

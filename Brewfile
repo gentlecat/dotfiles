@@ -7,6 +7,7 @@ tap 'gentlecat/personal'
 
 # The shell
 brew 'fish'
+brew 'starship'
 
 # Programming languages and environments
 brew 'elixir'
