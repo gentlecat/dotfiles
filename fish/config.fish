@@ -56,7 +56,8 @@ end
 # Aliases #
 ###########
 
-alias l="ls -CF"
+alias ls=exa
+alias l="ls -F"
 
 alias git=hub
 alias g=git
