@@ -69,7 +69,7 @@ alias c=code
 alias ws="cd ~/workspace/"
 alias go-ws="cd ~/workspace/go/src/"
 
-alias brew-sync="cd ~/workspace/dotfiles && brew update -v && brew upgrade -v --display-times && brew cask upgrade -v && brew bundle -v && brew cleanup && brew bundle cleanup -v --force --zap"
+alias brew-sync="cd ~/workspace/dotfiles && brew update && brew upgrade --display-times && brew cask upgrade && brew bundle -v && brew cleanup && brew bundle cleanup -v --force --zap"
 
 alias mosh-tor="mosh tor -- tmux a"
 
