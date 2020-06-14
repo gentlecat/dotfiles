@@ -60,7 +60,7 @@ end
 ###########
 
 alias ls=exa
-alias l="ls -F"
+alias l="ls -alF"
 
 alias git=hub
 alias g=git
