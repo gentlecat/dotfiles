@@ -27,23 +27,22 @@ brew 'vim', args: ['with-override-system-vi', 'with-python3', 'without-perl', 'w
 brew 'ack' # A better grep
 brew 'docker-compose'
 brew 'gcc'
-brew 'git'
 brew 'git-extras'
 brew 'git-secrets'
+brew 'git'
 brew 'gpg'
 brew 'grep'
 brew 'hub' # GitHub tools (supposed to be used as an alias for `git`)
+brew 'llvm'
 brew 'sqlite'
 brew 'yarn'
-brew 'llvm'
 
 # Utilities
 brew 'exa' # `ls` replacement
-brew 'graphviz'
 brew 'ffmpeg'
+brew 'graphviz'
 brew 'httpie'
 brew 'jrnl'
-brew 'libgxps'
 brew 'libgxps' # Includes XPS to PDF converter
 brew 'mosh', args: ['HEAD']
 brew 'pv' # Pipe Viewer
@@ -68,19 +67,20 @@ tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-versions'
 tap 'buo/cask-upgrade' # https://github.com/buo/homebrew-cask-upgrade
 
-#cask 'disk-inventory-x'
-#cask 'handbrake' # Video converter
-#cask 'keybase'
+#cask 'gas-mask'
+#cask 'tunnelbear'
+#cask 'osxfuse'
 cask '1password'
 cask 'aerial'
 cask 'alfred'
 cask 'appcleaner'
 cask 'calibre' # Book library management
+cask 'disk-inventory-x'
 cask 'docker'
 cask 'dropbox'
 cask 'flux'
 cask 'garmin-express'
-#cask 'gas-mask'
+cask 'handbrake' # Video converter
 cask 'imageoptim'
 cask 'iterm2'
 cask 'little-snitch'
@@ -96,36 +96,33 @@ cask 'steam'
 cask 'suspicious-package'
 cask 'the-unarchiver'
 cask 'transmission'
-#cask 'tunnelbear'
 cask 'tunnelblick'
 cask 'vlc'
 
 # Comms
+cask 'amazon-chime'
+cask 'discord'
 cask 'signal'
 cask 'telegram'
 cask 'whatsapp'
-cask 'discord'
-cask 'amazon-chime'
 
 # Development tools
-#cask 'insomnia'
-cask 'wireshark'
+#cask 'virtualbox'
 cask 'android-platform-tools'
-cask 'visual-studio-code'
 cask 'db-browser-for-sqlite'
 cask 'fork'
+cask 'insomnia'
 cask 'jetbrains-toolbox'
 cask 'sublime-text'
-#cask 'virtualbox'
+cask 'visual-studio-code'
+cask 'wireshark'
 
 # Browsers
 #cask 'chromium'
-cask 'google-chrome'
 #cask 'google-chrome-canary'
-cask 'tor-browser'
 cask 'firefox-developer-edition'
-
-#cask 'osxfuse'
+cask 'google-chrome'
+cask 'tor-browser'
 
 
 ########
