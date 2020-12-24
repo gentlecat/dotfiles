@@ -20,16 +20,16 @@ brew 'typescript'
 # Essentials
 brew 'coreutils'
 brew 'moreutils'
-brew 'vim', args: ['with-override-system-vi', 'with-python3', 'without-perl', 'with-custom-ruby']
+brew 'vim'
 
 # Dev tools
 #brew 'postgresql', args: ['with-python3', 'without-perl']
 brew 'ack' # A better grep
 brew 'docker-compose'
 brew 'gcc'
+brew 'git'
 brew 'git-extras'
 brew 'git-secrets'
-brew 'git'
 brew 'gpg'
 brew 'grep'
 brew 'hub' # GitHub tools (supposed to be used as an alias for `git`)
@@ -44,7 +44,7 @@ brew 'graphviz'
 brew 'httpie'
 brew 'jrnl'
 brew 'libgxps' # Includes XPS to PDF converter
-brew 'mosh', args: ['HEAD']
+brew 'mosh'
 brew 'pv' # Pipe Viewer
 brew 'screen'
 brew 'the_silver_searcher'
@@ -67,15 +67,14 @@ tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-versions'
 tap 'buo/cask-upgrade' # https://github.com/buo/homebrew-cask-upgrade
 
+# cask 'disk-inventory-x'
 #cask 'gas-mask'
-#cask 'tunnelbear'
 #cask 'osxfuse'
 cask '1password'
 cask 'aerial'
 cask 'alfred'
 cask 'appcleaner'
 cask 'calibre' # Book library management
-cask 'disk-inventory-x'
 cask 'docker'
 cask 'dropbox'
 cask 'flux'
@@ -86,17 +85,18 @@ cask 'iterm2'
 cask 'little-snitch'
 cask 'macs-fan-control'
 cask 'mactex-no-gui'
-cask 'mendeley-desktop'
+cask 'mendeley'
+cask 'mullvadvpn'
 cask 'plex-media-player'
 cask 'softu2f'
 cask 'sonos'
 cask 'sony-ps4-remote-play' # PS4 Remote Play
+cask 'spectacle'
 cask 'spotify'
 cask 'steam'
 cask 'suspicious-package'
 cask 'the-unarchiver'
 cask 'transmission'
-cask 'tunnelblick'
 cask 'vlc'
 
 # Comms
@@ -133,4 +133,4 @@ cask 'tor-browser'
 tap 'homebrew/cask-fonts'
 cask 'font-fira-code'
 cask 'font-iosevka'
-cask 'font-go-mono'
+cask 'font-go'
