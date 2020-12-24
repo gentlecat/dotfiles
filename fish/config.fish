@@ -17,12 +17,15 @@ set -x GOPATH ~/workspace/go
 set -x GODEV ~/workspace/golang
 set -x GOROOT_BOOTSTRAP (go env GOROOT)
 set PATH $GOPATH/bin $PATH
+set PATH $HOME/.radicle/bin $PATH
 
 # fuck
 eval (thefuck --alias | tr '\n' ';')
 
 set -x EDITOR subl
 set -x LANG "en_US.UTF-8"
+
+set -x HOMEBREW_NO_ANALYTICS 1
 
 ####################
 # Helper functions #
@@ -69,7 +72,7 @@ alias c=code
 alias ws="cd ~/workspace/"
 alias go-ws="cd ~/workspace/go/src/"
 
-alias brew-sync="cd ~/workspace/dotfiles && brew update && brew upgrade --display-times && brew cask upgrade && brew bundle -v && brew cleanup && brew bundle cleanup -v --force --zap"
+alias brew-sync="cd ~/workspace/dotfiles && brew update && brew upgrade --display-times && brew upgrade --cask && brew bundle -v && brew cleanup && brew bundle cleanup -v --force --zap"
 
 alias mosh-tor="mosh tor -- tmux a"
 
