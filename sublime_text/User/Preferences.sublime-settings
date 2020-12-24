@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/GoSublime/Ariana.sublime-color-scheme",
+	"color_scheme": "Packages/ayu/ayu-mirage.sublime-color-scheme",
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
 	"detect_indentation": true,
@@ -18,8 +18,8 @@
 	[
 		"node_modules"
 	],
-	"font_face": "Go Mono",
-	"font_size": 15,
+	"font_face": "SF Mono Medium",
+	"font_size": 13,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
 	"ignored_packages":
