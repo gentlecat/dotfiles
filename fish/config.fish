@@ -6,9 +6,6 @@ if not functions -q fisher
     fish -c fisher
 end
 
-# Starship shell prompt
-starship init fish | source
-
 # rbenv
 status --is-interactive; and source (rbenv init -|psub);
 
@@ -26,6 +23,7 @@ set -x EDITOR subl
 set -x LANG "en_US.UTF-8"
 
 set -x HOMEBREW_NO_ANALYTICS 1
+set -x HOMEBREW_INSTALL_FROM_API true
 
 ####################
 # Helper functions #
@@ -65,9 +63,10 @@ end
 alias ls=exa
 alias l="ls -alF"
 
-alias git=hub
 alias g=git
 alias c=code
+
+alias python=python3
 
 alias ws="cd ~/workspace/"
 alias go-ws="cd ~/workspace/go/src/"
@@ -75,16 +74,6 @@ alias go-ws="cd ~/workspace/go/src/"
 alias brew-sync="cd ~/workspace/dotfiles && brew update && brew upgrade --display-times && brew upgrade --cask && brew bundle -v && brew cleanup && brew bundle cleanup -v --force --zap"
 
 alias mosh-tor="mosh tor -- tmux a"
-
-# `s` with no arguments opens the current directory in Sublime Text, otherwise
-# opens the given location
-function s
-	if [ (count $argv) -eq 0 ]
-		subl .
-	else
-		subl "$argv"
-	end
-end
 
 # `v` with no arguments opens the current directory in Vim, otherwise opens the
 # given location
@@ -111,5 +100,5 @@ end
 # `less` with options to preserve color and line numbers, unless the output is
 # small enough for one screen.
 function tre
-	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$argv" | less -FRNX
+	tree -aC -I '.git|node_modules' --dirsfirst "$argv" | less -FRNX
 end
