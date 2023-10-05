@@ -156,6 +156,3 @@
 
 [pull]
 	ff = only
-
-[gpg]
-	format = ssh
