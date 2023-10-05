@@ -1,10 +1,6 @@
 [user]
 	name = Roman Tsukanov
-	email = roman@tsukanov.me
-	signingkey = 7F3BA2AD
-
-[commit]
-    gpgsign = true
+	email = git@roman.zone
 
 [github]
 	user = gentlecat
@@ -158,26 +154,8 @@
 	changed = green
 	untracked = cyan
 
+[pull]
+	ff = only
 
-# URL shorthands
-
-[url "git@github.com:"]
-	insteadOf = https://github.com/
-	pushInsteadOf = "github:"
-	pushInsteadOf = "git://github.com/"
-
-[url "git://github.com/"]
-	insteadOf = "github:"
-
-[url "git@gist.github.com:"]
-	insteadOf = "gst:"
-	pushInsteadOf = "gist:"
-	pushInsteadOf = "git://gist.github.com/"
-
-[url "git://gist.github.com/"]
-	insteadOf = "gist:"
-
-[filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
+[gpg]
+	format = ssh
