@@ -49,7 +49,6 @@ end
 # Aliases #
 ###########
 
-alias ls=exa
 alias l="ls -alF"
 
 alias g=git

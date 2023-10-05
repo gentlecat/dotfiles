@@ -3,6 +3,7 @@
 
 tap 'homebrew/bundle'
 tap 'homebrew/services'
+tap 'yt-dlp/taps'
 tap 'gentlecat/personal'
 
 # The shell
@@ -37,7 +38,6 @@ brew 'yarn'
 brew 'iperf3'
 
 # Utilities
-brew 'exa' # `ls` replacement
 brew 'ffmpeg'
 brew 'graphviz'
 brew 'httpie'
@@ -62,7 +62,6 @@ brew 'gentlecat/personal/clippy', args: ['HEAD']
 # Casks #
 #########
 
-tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-versions'
 tap 'buo/cask-upgrade' # https://github.com/buo/homebrew-cask-upgrade
 
@@ -84,7 +83,6 @@ cask 'knockknock'
 cask 'little-snitch' # free alternative: lulu
 cask 'macs-fan-control'
 cask 'mactex-no-gui'
-cask 'mendeley-reference-manager'
 cask 'monitorcontrol'
 cask 'moonlight'
 cask 'mullvadvpn'
@@ -103,6 +101,7 @@ cask 'taskexplorer'
 cask 'the-unarchiver'
 cask 'via'
 cask 'vlc'
+cask 'zotero'
 
 # Comms
 cask 'discord'
