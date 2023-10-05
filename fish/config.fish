@@ -8,6 +8,7 @@ end
 
 set -x EDITOR vim
 set -x LANG "en_US.UTF-8"
+set -x LANGUAGE "en_US"
 
 set -x HOMEBREW_NO_ANALYTICS 1
 set -x HOMEBREW_INSTALL_FROM_API true
