@@ -345,16 +345,3 @@ set wildignore+=go/bin                       " Go bin files
 set wildignore+=go/bin-vagrant               " Go bin-vagrant files
 set wildignore+=*.pyc                            " Python byte code
 set wildignore+=*.orig                           " Merge resolution files
-
-
-" ----------------------------------------- "
-" Plugin configs                            "
-" ----------------------------------------- "
-
-" ========= vim-better-whitespace ==================
-
-" auto strip whitespace except for file with extention blacklisted
-let blacklist = ['markdown', 'md']
-autocmd BufWritePre * if index(blacklist, &ft) < 0 | StripWhitespace
-
-" vim:ts=2:sw=2:et
