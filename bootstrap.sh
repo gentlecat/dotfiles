@@ -105,20 +105,16 @@ install_dotfiles () {
 
   local overwrite_all=false backup_all=false skip_all=false
 
+  mkdir -p "$XDG_CONFIG_HOME/git"
   link_file "$DOTFILES_ROOT/git/gitconfig.txt" "$XDG_CONFIG_HOME/git/config"
   link_file "$DOTFILES_ROOT/git/gitignore_global.txt" "$XDG_CONFIG_HOME/git/ignore"
 
   link_file "$DOTFILES_ROOT/vim/vimrc.txt" "$HOME/.vimrc"
   link_file "$DOTFILES_ROOT/vim/data" "$HOME/.vim"
-
-  for src in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.symlink' -not -path '*.git*')
-  do
-    dst="$HOME/.$(basename "${src%.*}")"
-    link_file "$src" "$dst"
-  done
 }
 
 link_fish_config () {
+  info 'installing fish config'
   local overwrite_all=false backup_all=false skip_all=false
 
   link_file "$DOTFILES_ROOT/fish" "$XDG_CONFIG_HOME/fish"
