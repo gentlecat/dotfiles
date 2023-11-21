@@ -152,3 +152,6 @@
 
 [pull]
 	ff = only
+
+[rebase]
+	autostash = true
