@@ -49,6 +49,8 @@ end
 # Aliases #
 ###########
 
+alias cat=bat
+alias ls=eza
 alias l="ls -alF"
 
 alias g=git
@@ -58,7 +60,7 @@ alias python=python3
 
 alias ws="cd ~/workspace/"
 
-alias brew-sync="cd ~/workspace/dotfiles && brew update && brew upgrade --display-times && brew upgrade --cask && brew bundle -v && brew cleanup && brew bundle cleanup -v --force --zap"
+alias brew-sync="cd ~/workspace/dotfiles; brew update; brew upgrade --display-times; brew upgrade --cask; brew bundle -v; brew cleanup; brew bundle cleanup -v --force --zap"
 
 alias mosh-tor="mosh tor -- tmux a"
 

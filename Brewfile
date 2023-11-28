@@ -25,17 +25,20 @@ brew 'vim'
 
 # Dev tools
 brew 'ack' # A better grep
-brew 'docker-compose'
+brew 'bat' # Clone of cat(1) with syntax highlighting and Git integration
+brew 'duf' # Disk Usage/Free Utility - a better 'df' alternative
+brew 'eza' # Modern, maintained replacement for ls
+brew 'fd' # Simple, fast and user-friendly alternative to find
 brew 'gcc'
-brew 'git'
+brew 'gh'
 brew 'git-extras'
 brew 'git-secrets'
+brew 'git'
 brew 'gpg'
 brew 'grep'
-brew 'gh'
+brew 'iperf3'
 brew 'sqlite'
 brew 'yarn'
-brew 'iperf3'
 
 # Utilities
 brew 'ffmpeg'
