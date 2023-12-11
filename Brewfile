@@ -17,6 +17,9 @@ brew 'node'
 brew 'python'
 brew 'rbenv'
 brew 'typescript'
+brew 'rust'
+brew 'rust-analyzer'
+brew 'rustfmt'
 
 # Essentials
 brew 'coreutils'
