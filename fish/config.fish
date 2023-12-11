@@ -35,11 +35,7 @@ if type -q docker
 	end
 
 	function docker-clean
-		echo "Removing containers..."
-		docker rm -f (docker ps -a -q)
-		echo "Removing images..."
-		docker rmi -f (docker images -q)
-		docker ps -a | cut -c-12 | xargs docker rm
+		docker system prune -a -f
 	end
 end
 
