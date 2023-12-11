@@ -18,45 +18,55 @@ set -x HOMEBREW_INSTALL_FROM_API true
 # Helper functions #
 ####################
 
-# Create an HTTP server serving current directory on port 8080
-function serve
-    python3 -m http.server --bind=localhost 8080
+if type -q python3
+	# Create an HTTP server serving current directory on port 8080
+	function serve
+		python3 -m http.server --bind=localhost 8080
+	end
 end
 
-function docker-bash
-	docker exec -it $argv /bin/bash
-end
+if type -q docker
+	function docker-bash
+		docker exec -it $argv /bin/bash
+	end
 
-function docker-sh
-    docker exec -it $argv /bin/sh
-end
+	function docker-sh
+		docker exec -it $argv /bin/sh
+	end
 
-function docker-clean
-	echo "Removing containers..."
-	docker rm -f (docker ps -a -q)
-	echo "Removing images..."
-	docker rmi -f (docker images -q)
-	docker ps -a | cut -c-12 | xargs docker rm
-end
-
-function cleanup
-	rm "/Users/roman/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.RecentDocuments.sfl"
-	rm "/Users/roman/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments.sfl"
-	rm -r "/Users/roman/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments"
+	function docker-clean
+		echo "Removing containers..."
+		docker rm -f (docker ps -a -q)
+		echo "Removing images..."
+		docker rmi -f (docker images -q)
+		docker ps -a | cut -c-12 | xargs docker rm
+	end
 end
 
 ###########
 # Aliases #
 ###########
 
-alias cat=bat
-alias ls=eza
+if type -q bat
+	alias cat=bat
+end
+
+if type -q eza
+	alias ls=eza
+end
 alias l="ls -alF"
 
-alias g=git
-alias c=code
+if type -q git
+	alias g=git
+end
 
-alias python=python3
+if type -q code
+	alias c=code
+end
+
+if type -q python3
+	alias python=python3
+end
 
 alias ws="cd ~/workspace/"
 
