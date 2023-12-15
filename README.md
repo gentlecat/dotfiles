@@ -2,7 +2,7 @@
 
 ## Setup
 
-	$ ./bootstrap.sh
+	$ ./init.py
 
 ### Homebrew
 
