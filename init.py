@@ -36,7 +36,7 @@ if __name__ == "__main__":
     link(f"{dotfiles_root}/vim/data", f"{home}/.vim")
 
     # Git
-    os.makedirs(f"{xdg_config_home}/git")
+    os.makedirs(f"{xdg_config_home}/git", exist_ok=True)
     link(f"{dotfiles_root}/git/gitconfig.txt", f"{xdg_config_home}/git/config")
     link(f"{dotfiles_root}/git/gitignore_global.txt", f"{xdg_config_home}/git/ignore")
 
