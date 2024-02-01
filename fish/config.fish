@@ -43,10 +43,6 @@ end
 # Aliases #
 ###########
 
-if type -q bat
-	alias cat=bat
-end
-
 if type -q eza
 	alias ls=eza
 end
