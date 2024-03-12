@@ -1,4 +1,5 @@
-set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
+set -g fish_user_paths "/opt/homebrew/bin" $fish_user_paths
+set -g fish_user_paths "/opt/homebrew/sbin" $fish_user_paths
 
 if not functions -q fisher
     set -q XDG_CONFIG_HOME; or set XDG_CONFIG_HOME ~/.config
