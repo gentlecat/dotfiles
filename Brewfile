@@ -3,7 +3,6 @@
 
 tap 'homebrew/bundle'
 tap 'homebrew/services'
-tap 'yt-dlp/taps'
 tap 'gentlecat/personal'
 
 # The shell
@@ -57,7 +56,7 @@ brew 'thefuck'
 brew 'tldr'
 brew 'tor'
 brew 'tree'
-brew 'yt-dlp/taps/yt-dlp' # Video downloader
+brew 'yt-dlp' # Video downloader
 brew 'zopfli'
 
 brew 'gentlecat/personal/clippy', args: ['HEAD']
@@ -72,7 +71,6 @@ tap 'homebrew/cask-versions'
 tap 'buo/cask-upgrade' # https://github.com/buo/homebrew-cask-upgrade
 
 cask '1password'
-cask 'adobe-acrobat-reader'
 cask 'appcleaner'
 cask 'audacity'
 cask 'blockblock'
@@ -103,7 +101,6 @@ cask 'steam'
 cask 'suspicious-package'
 cask 'taskexplorer'
 cask 'the-unarchiver'
-cask 'via'
 cask 'vlc'
 cask 'zotero'
 
