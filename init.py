@@ -31,6 +31,10 @@ if __name__ == "__main__":
     home = pathlib.Path.home()
     xdg_config_home = os.path.join(home, ".config")
 
+    # Atuin
+    os.makedirs(f"{xdg_config_home}/atuin", exist_ok=True)
+    link(f"{dotfiles_root}/atuin/config.toml", f"{xdg_config_home}/atuin/config.toml")
+
     # Vim
     link(f"{dotfiles_root}/vim/vimrc.txt", f"{home}/.vimrc")
     link(f"{dotfiles_root}/vim/data", f"{home}/.vim")
