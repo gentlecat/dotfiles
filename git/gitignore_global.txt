@@ -1,5 +1,6 @@
 # IDE garbage
 .idea
+.vscode
 *.iml
 
 # Jupyter Notebooks
