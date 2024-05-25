@@ -1,3 +1,11 @@
+set -x EDITOR vim
+set -x LC_ALL "en_US.UTF-8"
+set -x LANG "en_US.UTF-8"
+set -x LANGUAGE "en_US"
+
+set -x HOMEBREW_NO_ANALYTICS 1
+set -x HOMEBREW_INSTALL_FROM_API true
+
 if type -q /opt/homebrew/bin/brew
     eval "$(/opt/homebrew/bin/brew shellenv)"
 end
@@ -14,13 +22,10 @@ if status is-interactive
     end
 end
 
-set -x EDITOR vim
-set -x LC_ALL "en_US.UTF-8"
-set -x LANG "en_US.UTF-8"
-set -x LANGUAGE "en_US"
-
-set -x HOMEBREW_NO_ANALYTICS 1
-set -x HOMEBREW_INSTALL_FROM_API true
+if test -e "$HOME/.cargo/env.fish"
+    # On Linux cargo is installed and initialized differently
+    source "$HOME/.cargo/env.fish"
+end
 
 ####################
 # Helper functions #
