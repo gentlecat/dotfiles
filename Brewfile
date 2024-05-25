@@ -10,17 +10,17 @@ brew 'fish'
 
 # Programming languages and environments
 brew 'elixir'
-cask 'corretto'
 brew 'go'
 brew 'node'
 brew 'python'
-brew 'rbenv'
-brew 'typescript'
 brew 'rust'
 brew 'rust-analyzer'
 brew 'rustfmt'
+brew 'typescript'
+cask 'corretto'
 
 # Essentials
+brew 'atuin'
 brew 'coreutils'
 brew 'moreutils'
 brew 'vim'
@@ -45,6 +45,7 @@ brew 'yarn'
 # Utilities
 brew 'ffmpeg'
 brew 'graphviz'
+brew 'tectonic'
 brew 'httpie'
 brew 'jrnl'
 brew 'libgxps' # Includes XPS to PDF converter
@@ -52,12 +53,9 @@ brew 'mosh'
 brew 'pv' # Pipe Viewer
 brew 'screen'
 brew 'the_silver_searcher'
-brew 'thefuck'
 brew 'tldr'
-brew 'tor'
 brew 'tree'
 brew 'yt-dlp' # Video downloader
-brew 'zopfli'
 
 brew 'gentlecat/personal/clippy', args: ['HEAD']
 # brew 'gentlecat/personal/publisher', args: ['HEAD']
@@ -72,9 +70,10 @@ tap 'buo/cask-upgrade' # https://github.com/buo/homebrew-cask-upgrade
 
 cask '1password'
 cask 'appcleaner'
+cask 'arduino-ide'
 cask 'audacity'
-cask 'blockblock'
 cask 'calibre'
+cask 'darktable'
 cask 'flux'
 cask 'garmin-express'
 cask 'handbrake'
@@ -85,7 +84,6 @@ cask 'kicad'
 cask 'knockknock'
 cask 'little-snitch' # free alternative: lulu
 cask 'macs-fan-control'
-cask 'mactex-no-gui'
 cask 'monitorcontrol'
 cask 'moonlight'
 cask 'mullvadvpn'
@@ -113,7 +111,6 @@ cask 'whatsapp'
 # Development tools
 cask 'android-platform-tools'
 cask 'db-browser-for-sqlite'
-cask 'docker'
 cask 'insomnia'
 cask 'jetbrains-toolbox'
 cask 'visual-studio-code'
