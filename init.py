@@ -43,4 +43,7 @@ if __name__ == "__main__":
     # Fish
     link(f"{dotfiles_root}/fish", f"{xdg_config_home}/fish")
 
+    # dig
+    link(f"{dotfiles_root}/digrc.txt", f"{home}/.digrc")
+
     print("Done!")
