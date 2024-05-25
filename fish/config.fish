@@ -8,6 +8,12 @@ if not functions -q fisher
     fish -c fisher
 end
 
+if status is-interactive
+    if type -q atuin
+        atuin init fish | source
+    end
+end
+
 set -x EDITOR vim
 set -x LC_ALL "en_US.UTF-8"
 set -x LANG "en_US.UTF-8"
@@ -65,8 +71,6 @@ end
 alias ws="cd ~/workspace/"
 
 alias brew-sync="cd ~/workspace/dotfiles; brew update; brew upgrade --display-times; brew upgrade --cask; brew bundle -v; brew cleanup; brew bundle cleanup -v --force --zap"
-
-alias mosh-tor="mosh tor -- tmux a"
 
 # `v` with no arguments opens the current directory in Vim, otherwise opens the
 # given location
