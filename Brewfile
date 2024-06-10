@@ -69,6 +69,7 @@ tap 'homebrew/cask-versions'
 tap 'buo/cask-upgrade' # https://github.com/buo/homebrew-cask-upgrade
 
 cask '1password'
+cask 'adobe-creative-cloud'
 cask 'appcleaner'
 cask 'arduino-ide'
 cask 'audacity'
@@ -120,7 +121,6 @@ cask 'wireshark'
 cask 'firefox-developer-edition'
 cask 'google-chrome'
 cask 'tor-browser'
-cask 'arc'
 
 
 ########
