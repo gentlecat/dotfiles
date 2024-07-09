@@ -92,8 +92,6 @@ cask 'netiquette'
 cask 'nextcloud'
 cask 'obs'
 cask 'raspberry-pi-imager'
-cask 'rectangle'
-cask 'reikey'
 cask 'sonos'
 cask 'spotify'
 cask 'steam'
@@ -118,7 +116,7 @@ cask 'visual-studio-code'
 cask 'wireshark'
 
 # Browsers
-cask 'firefox-developer-edition'
+cask 'firefox@developer-edition'
 cask 'google-chrome'
 cask 'tor-browser'
 

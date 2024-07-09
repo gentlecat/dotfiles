@@ -75,7 +75,7 @@ end
 
 alias ws="cd ~/workspace/"
 
-alias brew-sync="cd ~/workspace/dotfiles; brew update; brew upgrade --display-times; brew upgrade --cask; brew bundle -v; brew cleanup; brew bundle cleanup -v --force --zap"
+alias brew-sync="cd ~/workspace/dotfiles; brew update; brew upgrade --display-times; brew upgrade --cask; brew bundle -v; brew cleanup; brew bundle cleanup -v --force"
 
 # `v` with no arguments opens the current directory in Vim, otherwise opens the
 # given location
