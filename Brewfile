@@ -23,6 +23,7 @@ cask 'corretto'
 brew 'atuin'
 brew 'coreutils'
 brew 'moreutils'
+brew 'helix'
 brew 'vim'
 
 # Dev tools
