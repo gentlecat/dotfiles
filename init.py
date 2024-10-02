@@ -6,6 +6,10 @@ import shutil
 
 
 def link(src_path: str, dst_path: str):
+    """
+    :param src_path: Either directory or a file.
+    :param dst_path: Directory where the link should be created.
+    """
     print(f"Linking {src_path} to {dst_path}")
 
     # Backup and clean up if exists
@@ -15,11 +19,11 @@ def link(src_path: str, dst_path: str):
             print(f"Replacing previous symlink at {dst_path}")
             os.remove(dst_path)
         elif src.is_dir():
-            print(f"Backing up {dst_path}")
+            print(f"Backing up directory {dst_path}")
             shutil.move(dst_path, dst_path + ".backup")
             shutil.rmtree(dst_path, ignore_errors=True)
         elif src.is_file():
-            print(f"Backing up {dst_path}")
+            print(f"Backing up file {dst_path}")
             shutil.move(dst_path, dst_path + ".backup")
             os.remove(dst_path)
 
@@ -31,10 +35,6 @@ if __name__ == "__main__":
     home = pathlib.Path.home()
     xdg_config_home = os.path.join(home, ".config")
 
-    # Atuin
-    os.makedirs(f"{xdg_config_home}/atuin", exist_ok=True)
-    link(f"{dotfiles_root}/atuin/config.toml", f"{xdg_config_home}/atuin/config.toml")
-
     # Vim
     link(f"{dotfiles_root}/vim/vimrc.txt", f"{home}/.vimrc")
     link(f"{dotfiles_root}/vim/data", f"{home}/.vim")
@@ -44,8 +44,14 @@ if __name__ == "__main__":
     link(f"{dotfiles_root}/git/gitconfig.txt", f"{xdg_config_home}/git/config")
     link(f"{dotfiles_root}/git/gitignore_global.txt", f"{xdg_config_home}/git/ignore")
 
+    # Atuin
+    link(f"{dotfiles_root}/atuin", f"{xdg_config_home}/atuin")
+
     # Fish
     link(f"{dotfiles_root}/fish", f"{xdg_config_home}/fish")
+
+    # Helix
+    link(f"{dotfiles_root}/helix", f"{xdg_config_home}/helix")
 
     # dig
     link(f"{dotfiles_root}/digrc.txt", f"{home}/.digrc")
