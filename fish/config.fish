@@ -22,10 +22,14 @@ if status is-interactive
     end
 end
 
+# Rust
 if test -e "$HOME/.cargo/env.fish"
     # On Linux cargo is installed and initialized differently
     source "$HOME/.cargo/env.fish"
 end
+
+# Go
+fish_add_path ~/go/bin
 
 ####################
 # Helper functions #
