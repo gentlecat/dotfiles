@@ -50,6 +50,9 @@ if __name__ == "__main__":
     # Fish
     link(f"{dotfiles_root}/fish", f"{xdg_config_home}/fish")
 
+    # Ghostty
+    link(f"{dotfiles_root}/ghostty", f"{xdg_config_home}/ghostty")
+
     # Helix
     link(f"{dotfiles_root}/helix", f"{xdg_config_home}/helix")
 
