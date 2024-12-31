@@ -2,7 +2,7 @@
 
 ## Setup
 
-	$ ./init.py
+    $ ./init.py
 
 ### Homebrew
 
