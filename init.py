@@ -56,6 +56,9 @@ if __name__ == "__main__":
     # Helix
     link(f"{dotfiles_root}/helix", f"{xdg_config_home}/helix")
 
+    # Zed
+    link(f"{dotfiles_root}/zed", f"{xdg_config_home}/zed")
+
     # dig
     link(f"{dotfiles_root}/digrc.txt", f"{home}/.digrc")
 

@@ -37,11 +37,13 @@ brew 'gh'
 brew 'git'
 brew 'git-extras'
 brew 'git-secrets'
+brew 'gobuster' # Directory/file & DNS busting tool written in Go
 brew 'gpg'
 brew 'grep'
 brew 'iperf3'
 brew 'lazygit'
 brew 'sqlite'
+brew 'subfinder' # Subdomain discovery tool
 brew 'yarn'
 
 # Utilities
