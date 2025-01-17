@@ -1,5 +1,6 @@
 # Run `brew bundle -v` to install all of this.
 # Run `brew bundle cleanup -v --force` to remove all the garbage.
+# Run `brew uninstall --zap <PACKAGE>` to remove a specific package before deleting it from this list.
 
 tap 'homebrew/bundle'
 tap 'homebrew/services'
@@ -116,7 +117,6 @@ cask 'handbrake'
 cask 'imageoptim'
 cask 'inkscape'
 cask 'kicad'
-cask 'knockknock'
 cask 'macs-fan-control'
 cask 'monitorcontrol'
 cask 'mullvadvpn'
@@ -139,5 +139,6 @@ cask 'zotero'
 # Fonts
 tap 'homebrew/cask-fonts'
 cask 'font-fira-code'
-cask 'font-iosevka'
 cask 'font-go'
+cask 'font-iosevka'
+cask 'font-spline-sans-mono'
