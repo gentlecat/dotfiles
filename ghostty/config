@@ -1,2 +1,5 @@
-font-family=SF Mono
+font-family=Spline Sans Mono
 font-size=12.8
+
+keybind = cmd+left=previous_tab
+keybind = cmd+right=next_tab
