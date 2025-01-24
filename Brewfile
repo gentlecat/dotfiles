@@ -8,6 +8,24 @@ tap 'gentlecat/personal'
 
 # The shell
 brew 'fish'
+brew 'atuin'
+
+# Dev tools
+brew 'ack' # A better grep
+brew 'bat' # Clone of cat(1) with syntax highlighting and Git integration
+brew 'coreutils' # GNU File, Shell, and Text utilities
+brew 'duf' # Disk Usage/Free Utility - a better 'df' alternative
+brew 'eza' # Modern, maintained replacement for ls
+brew 'fd' # Simple, fast and user-friendly alternative to find
+brew 'git'
+brew 'git-extras'
+brew 'git-secrets'
+brew 'grep'
+brew 'helix'
+brew 'iperf3' # Update of iperf: measures TCP, UDP, and SCTP bandwidth
+brew 'lazygit' # Simple terminal UI for git commands
+brew 'vim'
+brew 'yarn'
 
 # Programming languages and environments
 brew 'elixir'
@@ -20,48 +38,23 @@ brew 'rustfmt'
 brew 'typescript'
 cask 'corretto'
 
-# Essentials
-brew 'atuin'
-brew 'coreutils'
-brew 'moreutils'
-brew 'helix'
-brew 'vim'
-
-# Dev tools
-brew 'ack' # A better grep
-brew 'bat' # Clone of cat(1) with syntax highlighting and Git integration
-brew 'duf' # Disk Usage/Free Utility - a better 'df' alternative
-brew 'eza' # Modern, maintained replacement for ls
-brew 'fd' # Simple, fast and user-friendly alternative to find
-brew 'gcc'
-brew 'gh'
-brew 'git'
-brew 'git-extras'
-brew 'git-secrets'
-brew 'gobuster' # Directory/file & DNS busting tool written in Go
-brew 'gpg'
-brew 'grep'
-brew 'iperf3'
-brew 'lazygit'
-brew 'sqlite'
-brew 'subfinder' # Subdomain discovery tool
-brew 'yarn'
-
 # Utilities
 brew 'ffmpeg'
-brew 'graphviz'
 brew 'httpie'
 brew 'jrnl'
-brew 'libgxps' # Includes XPS to PDF converter
 brew 'mosh'
-brew 'nmap'
 brew 'pv' # Pipe Viewer
-brew 'screen'
-brew 'tectonic'
-brew 'the_silver_searcher'
-brew 'tldr'
-brew 'tree'
-brew 'yt-dlp' # Video downloader
+brew 'tectonic' # Modernized, complete, self-contained TeX/LaTeX engine
+brew 'the_silver_searcher' # Code-search similar to ack
+brew 'tldr' # Simplified and community-driven man pages
+brew 'tree' # Display directories as trees (with optional color/HTML output)
+brew 'yt-dlp' # Feature-rich command-line audio/video downloader
+
+# Infosec
+brew 'ffuf' # Fast web fuzzer written in Go
+brew 'gobuster' # Directory/file & DNS busting tool written in Go
+brew 'nmap' # Port scanning utility for large networks
+brew 'subfinder' # Subdomain discovery tool
 
 brew 'gentlecat/personal/clippy', args: ['HEAD']
 # brew 'gentlecat/personal/publisher', args: ['HEAD']
@@ -71,7 +64,6 @@ brew 'gentlecat/personal/clippy', args: ['HEAD']
 # Casks #
 #########
 
-tap 'homebrew/cask-versions'
 tap 'buo/cask-upgrade' # https://github.com/buo/homebrew-cask-upgrade
 
 # Essentials
@@ -98,6 +90,12 @@ cask 'zed'
 cask 'firefox@developer-edition'
 cask 'google-chrome'
 cask 'tor-browser'
+
+# Fonts
+cask 'font-fira-code'
+cask 'font-go'
+cask 'font-iosevka'
+cask 'font-spline-sans-mono'
 
 # Gaming
 cask 'moonlight'
@@ -128,15 +126,3 @@ cask 'the-unarchiver'
 cask 'vlc'
 cask 'wireshark'
 cask 'zotero'
-
-
-########
-# Misc #
-########
-
-# Fonts
-tap 'homebrew/cask-fonts'
-cask 'font-fira-code'
-cask 'font-go'
-cask 'font-iosevka'
-cask 'font-spline-sans-mono'
