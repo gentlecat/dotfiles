@@ -28,6 +28,7 @@ brew 'vim'
 brew 'yarn'
 
 # Programming languages and environments
+brew 'deno'
 brew 'elixir'
 brew 'go'
 brew 'node'
