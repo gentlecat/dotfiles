@@ -43,6 +43,7 @@ cask 'corretto'
 brew 'ffmpeg'
 brew 'httpie'
 brew 'jrnl'
+brew 'exiftool' # Perl lib for reading and writing EXIF metadata
 brew 'mosh'
 brew 'pv' # Pipe Viewer
 brew 'tectonic' # Modernized, complete, self-contained TeX/LaTeX engine
@@ -120,6 +121,7 @@ cask 'mullvadvpn'
 cask 'netiquette'
 cask 'nextcloud'
 cask 'obs'
+cask 'openscad'
 cask 'orcaslicer'
 cask 'raspberry-pi-imager'
 cask 'suspicious-package'
