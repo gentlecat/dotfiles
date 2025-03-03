@@ -7,10 +7,14 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "terminal": {
+    "dock": "bottom"
+  },
   "telemetry": {
     "metrics": false,
     "diagnostics": false
   },
+  "soft_wrap": "editor_width",
   "autosave": "on_focus_change",
   "format_on_save": "off",
   "ui_font_size": 16,
@@ -19,6 +23,6 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Ayu Dark"
+    "dark": "Summercamp"
   }
 }
