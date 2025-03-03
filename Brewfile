@@ -4,13 +4,17 @@
 
 tap 'homebrew/bundle'
 tap 'homebrew/services'
-tap 'gentlecat/personal'
+tap 'buo/cask-upgrade' # https://github.com/buo/homebrew-cask-upgrade
 
 # The shell
 brew 'fish'
 brew 'atuin'
 
-# Dev tools
+
+#############
+# Dev tools #
+#############
+
 brew 'ack' # A better grep
 brew 'bat' # Clone of cat(1) with syntax highlighting and Git integration
 brew 'coreutils' # GNU File, Shell, and Text utilities
@@ -24,8 +28,15 @@ brew 'grep'
 brew 'helix'
 brew 'iperf3' # Update of iperf: measures TCP, UDP, and SCTP bandwidth
 brew 'lazygit' # Simple terminal UI for git commands
+brew 'mosh'
+brew 'pv' # Pipe Viewer
+brew 'the_silver_searcher' # Code-search similar to ack
+brew 'tldr' # Simplified and community-driven man pages
+brew 'tree' # Display directories as trees (with optional color/HTML output)
 brew 'vim'
 brew 'yarn'
+
+cask 'ghostty'
 
 # Programming languages and environments
 brew 'deno'
@@ -39,48 +50,14 @@ brew 'rustfmt'
 brew 'typescript'
 cask 'corretto'
 
-# Utilities
-brew 'ffmpeg'
-brew 'httpie'
-brew 'jrnl'
-brew 'exiftool' # Perl lib for reading and writing EXIF metadata
-brew 'mosh'
-brew 'pv' # Pipe Viewer
-brew 'tectonic' # Modernized, complete, self-contained TeX/LaTeX engine
-brew 'the_silver_searcher' # Code-search similar to ack
-brew 'tldr' # Simplified and community-driven man pages
-brew 'tree' # Display directories as trees (with optional color/HTML output)
-brew 'yt-dlp' # Feature-rich command-line audio/video downloader
+# Containers
+brew 'docker'
+brew 'docker-compose'
+brew 'docker-buildx'
+brew 'podman'
+cask 'podman-desktop'
 
-# Infosec
-brew 'ffuf' # Fast web fuzzer written in Go
-brew 'gobuster' # Directory/file & DNS busting tool written in Go
-brew 'nmap' # Port scanning utility for large networks
-brew 'subfinder' # Subdomain discovery tool
-
-brew 'gentlecat/personal/clippy', args: ['HEAD']
-# brew 'gentlecat/personal/publisher', args: ['HEAD']
-
-
-#########
-# Casks #
-#########
-
-tap 'buo/cask-upgrade' # https://github.com/buo/homebrew-cask-upgrade
-
-# Essentials
-cask '1password'
-cask 'ghostty'
-cask 'iterm2'
-cask 'little-snitch' # free alternative: lulu
-
-# Comms
-cask 'discord'
-cask 'signal'
-cask 'telegram'
-cask 'whatsapp'
-
-# Development tools
+# IDEs and editors
 cask 'android-platform-tools'
 cask 'arduino-ide'
 cask 'db-browser-for-sqlite'
@@ -88,22 +65,20 @@ cask 'insomnia'
 cask 'jetbrains-toolbox'
 cask 'zed'
 
-# Browsers
-cask 'firefox@developer-edition'
-cask 'google-chrome'
-cask 'tor-browser'
 
-# Fonts
-cask 'font-fira-code'
-cask 'font-go'
-cask 'font-iosevka'
-cask 'font-spline-sans-mono'
+###############
+# Other utils #
+###############
 
-# Gaming
-cask 'moonlight'
-cask 'sony-ps-remote-play'
-cask 'steam'
+brew 'ansible'
+brew 'ffmpeg'
+brew 'httpie'
+brew 'jrnl'
+brew 'exiftool' # Perl lib for reading and writing EXIF metadata
+brew 'tectonic' # Modernized, complete, self-contained TeX/LaTeX engine
+brew 'yt-dlp' # Feature-rich command-line audio/video downloader
 
+cask '1password'
 cask 'adobe-creative-cloud'
 cask 'appcleaner'
 cask 'audacity'
@@ -116,6 +91,7 @@ cask 'handbrake'
 cask 'imageoptim'
 cask 'inkscape'
 cask 'kicad'
+cask 'little-snitch' # free alternative: lulu
 cask 'macs-fan-control'
 cask 'monitorcontrol'
 cask 'mullvadvpn'
@@ -130,3 +106,38 @@ cask 'the-unarchiver'
 cask 'vlc'
 cask 'wireshark'
 cask 'zotero'
+
+# Infosec
+brew 'ffuf' # Fast web fuzzer written in Go
+brew 'gobuster' # Directory/file & DNS busting tool written in Go
+brew 'nmap' # Port scanning utility for large networks
+brew 'subfinder' # Subdomain discovery tool
+
+# Browsers
+cask 'firefox@developer-edition'
+cask 'google-chrome'
+cask 'librewolf'
+cask 'mullvad-browser'
+cask 'orion'
+cask 'tor-browser'
+
+# Fonts
+cask 'font-fira-code'
+cask 'font-go'
+cask 'font-iosevka'
+cask 'font-spline-sans-mono'
+
+# Comms
+cask 'discord'
+cask 'signal'
+cask 'telegram'
+cask 'whatsapp'
+
+# Gaming
+cask 'moonlight'
+cask 'sony-ps-remote-play'
+cask 'steam'
+
+tap 'gentlecat/personal'
+brew 'gentlecat/personal/clippy', args: ['HEAD']
+# brew 'gentlecat/personal/publisher', args: ['HEAD']
