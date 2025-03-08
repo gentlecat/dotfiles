@@ -71,11 +71,12 @@ cask 'zed'
 ###############
 
 brew 'ansible'
+brew 'exiftool' # Perl lib for reading and writing EXIF metadata
 brew 'ffmpeg'
 brew 'httpie'
 brew 'jrnl'
-brew 'exiftool' # Perl lib for reading and writing EXIF metadata
 brew 'tectonic' # Modernized, complete, self-contained TeX/LaTeX engine
+brew 'typst' # Markup-based typesetting system
 brew 'yt-dlp' # Feature-rich command-line audio/video downloader
 
 cask '1password'
