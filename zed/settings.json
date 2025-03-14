@@ -22,7 +22,7 @@
   "buffer_font_family": "Spline Sans Mono",
   "theme": {
     "mode": "system",
-    "light": "One Light",
-    "dark": "Summercamp"
+    "light": "Gruvbox Light Hard",
+    "dark": "Gruvbox Dark Hard"
   }
 }
