@@ -31,7 +31,7 @@ brew 'lazygit' # Simple terminal UI for git commands
 brew 'mosh'
 brew 'pv' # Pipe Viewer
 brew 'the_silver_searcher' # Code-search similar to ack
-brew 'tldr' # Simplified and community-driven man pages
+brew 'tlrc' # Simplified and community-driven man pages
 brew 'tree' # Display directories as trees (with optional color/HTML output)
 brew 'vim'
 brew 'yarn'
