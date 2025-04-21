@@ -2,8 +2,6 @@
 # Run `brew bundle cleanup -v --force` to remove all the garbage.
 # Run `brew uninstall --zap <PACKAGE>` to remove a specific package before deleting it from this list.
 
-tap 'homebrew/bundle'
-tap 'homebrew/services'
 
 # The shell
 brew 'fish'
