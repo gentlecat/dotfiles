@@ -71,8 +71,8 @@ if type -q git
 	alias g=git
 end
 
-if type -q code
-	alias c=code
+if type -q zed
+	alias z=zed
 end
 
 if type -q python3
