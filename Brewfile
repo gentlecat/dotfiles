@@ -119,6 +119,7 @@ cask 'font-spline-sans-mono'
 # Comms
 cask 'discord'
 cask 'signal'
+cask 'whatsapp'
 
 # Gaming
 cask 'moonlight'
