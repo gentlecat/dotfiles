@@ -24,8 +24,8 @@ brew 'git-secrets'
 brew 'grep'
 brew 'helix'
 brew 'iperf3' # Update of iperf: measures TCP, UDP, and SCTP bandwidth
+brew 'jujutsu'
 brew 'lazygit' # Simple terminal UI for git commands
-brew 'mosh'
 brew 'pv' # Pipe Viewer
 brew 'the_silver_searcher' # Code-search similar to ack
 brew 'tlrc' # Simplified and community-driven man pages
