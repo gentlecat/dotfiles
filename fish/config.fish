@@ -98,3 +98,7 @@ end
 function tre
 	tree -aC -I '.git|node_modules' --dirsfirst "$argv" | less -FRNX
 end
+
+if type -q starship
+    starship init fish | source
+end
