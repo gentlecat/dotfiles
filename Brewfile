@@ -92,7 +92,6 @@ cask 'nextcloud'
 cask 'obs'
 cask 'orcaslicer'
 cask 'raspberry-pi-imager'
-cask 'spotify'
 cask 'suspicious-package'
 cask 'tailscale-app'
 cask 'the-unarchiver'
@@ -112,9 +111,11 @@ cask 'google-chrome'
 cask 'tor-browser'
 
 # Fonts
+cask 'font-cascadia-code'
 cask 'font-fira-code'
 cask 'font-go'
 cask 'font-iosevka'
+cask 'font-national-park'
 cask 'font-spline-sans-mono'
 
 # Comms
