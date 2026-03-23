@@ -59,8 +59,12 @@ if type -q git
 	alias g=git
 end
 
+# Zed (some package managers don't use "zed" for reference)
 if type -q zed
 	alias z=zed
+end
+if type -q zeditor
+	alias z=zeditor
 end
 
 if type -q python3
