@@ -40,6 +40,7 @@ cask 'ghostty'
 # Programming languages and environments
 brew 'deno'
 brew 'go'
+brew 'node'
 brew 'python'
 brew 'rust'
 brew 'rust-analyzer'
