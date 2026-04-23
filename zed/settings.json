@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "buffer_line_height": "standard",
   "icon_theme": {
     "mode": "system",
     "light": "JetBrains New UI Icons (Light)",
@@ -24,11 +25,12 @@
   "autosave": "on_focus_change",
   "format_on_save": "off",
   "ui_font_size": 16,
-  "buffer_font_size": 12.8,
-  "buffer_font_family": "Fira Code",
+  "buffer_font_size": 15.0,
+  "buffer_font_family": "Inconsolata",
+  "buffer_line_height": "standard",
   "theme": {
-    "mode": "system",
-    "light": "macOS Classic Light",
-    "dark": "macOS Classic Dark"
+    "mode": "light",
+    "light": "Gruvbox Light Hard",
+    "dark": "Gruvbox Dark Hard"
   }
 }
