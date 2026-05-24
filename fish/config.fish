@@ -5,11 +5,13 @@ set -x LC_ALL "en_US.UTF-8"
 set -x LANG "en_US.UTF-8"
 set -x LANGUAGE "en_US"
 
-set -x HOMEBREW_NO_ANALYTICS 1
-set -x HOMEBREW_INSTALL_FROM_API true
-
+# Homebrew
 if type -q /opt/homebrew/bin/brew
+    set -x HOMEBREW_NO_ANALYTICS 1
+    set -x HOMEBREW_INSTALL_FROM_API true
     eval "$(/opt/homebrew/bin/brew shellenv)"
+
+    alias brew-sync="cd ~/workspace/dotfiles; brew update; brew upgrade --display-times; brew upgrade --cask; brew bundle -v; brew cleanup; brew bundle cleanup --force"
 end
 
 if status is-interactive
@@ -72,8 +74,6 @@ if type -q python3
 end
 
 alias ws="cd ~/workspace/"
-
-alias brew-sync="cd ~/workspace/dotfiles; brew update; brew upgrade --display-times; brew upgrade --cask; brew bundle -v; brew cleanup; brew bundle cleanup -v --force"
 
 # `v` with no arguments opens the current directory in Vim, otherwise opens the
 # given location
