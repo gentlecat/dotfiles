@@ -41,8 +41,8 @@
   "buffer_font_family": "Inconsolata",
   "buffer_line_height": "standard",
   "theme": {
-    "mode": "light",
+    "mode": "system",
     "light": "Gruvbox Light Hard",
-    "dark": "Gruvbox Dark Hard"
+    "dark": "Ayu Dark"
   }
 }
