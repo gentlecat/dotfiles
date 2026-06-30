@@ -8,6 +8,7 @@ set -x LANGUAGE "en_US"
 # Homebrew
 if type -q /opt/homebrew/bin/brew
     set -x HOMEBREW_NO_ANALYTICS 1
+    set -x HOMEBREW_NO_REQUIRE_TAP_TRUST 1
     set -x HOMEBREW_INSTALL_FROM_API true
     eval "$(/opt/homebrew/bin/brew shellenv)"
 
